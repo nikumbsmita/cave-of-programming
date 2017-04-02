@@ -10,7 +10,14 @@
 		<constructor-arg value="777" name="id"></constructor-arg>
 		<constructor-arg value="Mary" name="name"></constructor-arg>
 		<property value="321" name="taxId">
-			
+
 		</property>
+		<property name="address" ref="address"></property>
+	</bean>
+
+
+	<bean id="address" class="com.caveofprogramming.spring.test.Address">
+		<constructor-arg name="street" value="1 Church Lane"></constructor-arg>
+		<constructor-arg name="postcode" value="9876"></constructor-arg>
 	</bean>
 </beans>
