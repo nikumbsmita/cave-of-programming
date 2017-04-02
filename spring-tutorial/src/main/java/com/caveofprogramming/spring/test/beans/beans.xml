@@ -5,8 +5,12 @@
 
 
 
-	<bean id="person" class="com.caveofprogramming.spring.test.Person">
+	<bean id="person"
+		class="com.caveofprogramming.spring.test.Person">
 		<constructor-arg value="777" name="id"></constructor-arg>
 		<constructor-arg value="Mary" name="name"></constructor-arg>
+		<property value="321" name="taxId">
+			
+		</property>
 	</bean>
 </beans>
