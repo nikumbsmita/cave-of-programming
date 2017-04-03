@@ -16,10 +16,9 @@ public class App {
 		Person person1 = (Person)context.getBean("person");
 		
 		Person person2 = (Person)context.getBean("person");
-		
+			
 		person1.setTaxId(666);
 		
-		System.out.println(person1);
 		System.out.println(person2);
 		
 		((ClassPathXmlApplicationContext)context).close();

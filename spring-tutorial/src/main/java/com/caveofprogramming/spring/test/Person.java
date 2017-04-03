@@ -15,13 +15,20 @@ public class Person {
 	}
 	
 	public Person(int id, String name) {
-		super();
 		this.id = id;
 		this.name = name;
 	}
 	
 	public void setTaxId(int taxId) {
 		this.taxId = taxId;
+	}
+	
+	public void onCreate(){
+		System.out.println("Person created " + this);
+	}
+	
+	public void onDestroy(){
+		System.out.println("Person destroyed.");
 	}
 
 	public void speak(){
